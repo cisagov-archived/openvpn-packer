@@ -38,9 +38,21 @@ variable "build_region_kms" {
   type        = string
 }
 
+<<<<<<< HEAD
 variable "cdm_enabled" {
   default     = false
   description = "Indicate whether or not the CDM tools should be installed on the AMI."
+=======
+variable "force_install_ansible_requirements" {
+  default     = false
+  description = "Indicate if the Ansible requirements should be force installed."
+  type        = bool
+}
+
+variable "force_install_ansible_requirements_with_dependencies" {
+  default     = false
+  description = "Indicate if the Ansible requirements *and* their dependencies should be force installed."
+>>>>>>> 2389d3a25318e6927ce69250acfe76e6846ee885
   type        = bool
 }
 

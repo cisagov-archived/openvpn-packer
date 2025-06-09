@@ -5,9 +5,13 @@
 # ------------------------------------------------------------------------------
 
 variable "ami_share_account_name_regex" {
+<<<<<<< HEAD
   # This regex supports the legacy naming convention for the Shared Services
   # account
   default     = "^Shared Services"
+=======
+  default     = "^env[[:digit:]]+"
+>>>>>>> 2389d3a25318e6927ce69250acfe76e6846ee885
   description = "A regular expression that matches the names of AWS accounts with which to share the AMIs created by this repository.  This variable is used to share the AMIs with accounts that are members of the same AWS Organization as the account that owns the AMIs."
   type        = string
 }
